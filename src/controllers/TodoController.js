@@ -41,7 +41,7 @@ class TodoController
             const todos     = await TodosService.read(id);
             
             if(!todos){
-                return res.status(400).send('User Tidak Di temukan');
+                return res.status(400).send('Todos Tidak Di temukan');
             }
 
             const update = await TodosService.update(id, req.body);
