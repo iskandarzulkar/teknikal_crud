@@ -24,6 +24,7 @@ class TodoController
             todos.push({ title, description});
             const data = await TodosService.create(todos[0]);
 
+            console.log(data);
             res.status(201).json(data);
             
         } catch (error) {

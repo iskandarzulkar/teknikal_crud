@@ -6,9 +6,9 @@ const authMiddleware = require("../middleware/authMiddleware");
 
 Router.get('/', authMiddleware, TodoController.getAll);
 Router.post('/', authMiddleware, TodoController.create);
-Router.get('/:id_order', authMiddleware, TodoController.getById); 
-Router.put('/:id_order', authMiddleware, TodoController.update);
-Router.delete('/:id_order', authMiddleware, TodoController.delete);
+Router.get('/:id', authMiddleware, TodoController.getById); 
+Router.put('/:id', authMiddleware, TodoController.update);
+Router.delete('/:id', authMiddleware, TodoController.delete);
 
 
 module.exports = Router;
