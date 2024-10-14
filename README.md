@@ -18,5 +18,6 @@ CREATE TABLE todo (
 
 
 #UNTUK RUNNING 
+npm i 
 npm run dev
 
